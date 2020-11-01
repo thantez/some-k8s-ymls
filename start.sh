@@ -11,6 +11,6 @@ git config --global user.name thantez
 git config --global user.email "bakhshi@protonmail.com"
 
 # Completion setup
-k completion bash > cbash-temp
+kubectl completion bash > cbash-temp
 source cbash-temp
 rm -fr cbash-temp
