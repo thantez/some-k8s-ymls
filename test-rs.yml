@@ -7,8 +7,12 @@ metadata:
 spec:
   replicas: 3
   selector:
-    matchLabels:
-      app: nginx
+    matchExpressions:
+      - key: app
+        operator: In # or Equal or NotIn
+        values:
+          - nginx
+          - apache
   template:
     metadata:
       name: rs-template

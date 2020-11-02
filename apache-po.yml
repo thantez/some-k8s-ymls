@@ -1,0 +1,19 @@
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apache-po
+  namespace: test 
+  # Labels are important in k8s, they work well with annotaitions.
+  labels:
+    app: apache
+    group: scuadron
+    type: frontend
+spec:
+  containers:
+    - name: httpd
+      image: httpd:latest
+      ports:
+        - name: 80-tcp
+          protocol: TCP # or UDP or SDCP.
+          containerPort: 80
