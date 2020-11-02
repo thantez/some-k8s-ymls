@@ -1,0 +1,20 @@
+
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: test-rs
+  namespace: test
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      name: rs-template
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx-po
+          image: nginx:latest
