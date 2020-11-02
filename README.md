@@ -12,5 +12,5 @@ This repository is for working with kubernetes's YAMLs and training in katacoda 
 ## Types of service
 
 - ClusterIP: Set a static IP in cluster ip range. we can connect to pod inside cluster zone.
-- NodePORT: Set a port by node for accessing to pod by node's IP and service's port.
+- NodePort: Set a port by node for accessing to pod by node's IP and service's port.
 - LoadBalancer: Set a static ip for service by using from network managment service (or something like that!).
