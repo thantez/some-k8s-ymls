@@ -9,6 +9,7 @@ spec:
   ports:
     - port: 80
       targetPort: 80
+      # NodePort can set there, for example: `NodepPort: 80`.
   selector:
     app: nginx
     type: frontend
