@@ -17,4 +17,4 @@ spec:
         - name: 80-tcp
           protocol: TCP # or UDP or SDCP.
           containerPort: 80
-  # nodeName: <node ip> will use to define a epecified node for this pod.
+  # nodeName: <node ip> will use to define a specified node for this pod.
